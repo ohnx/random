@@ -6,3 +6,5 @@ Prompts you for a color if none is specified in GET variable `hex`. If an invali
 
 
 You can select the color with [JSColor](http://jscolor.com/) by putting `jscolor.js` (and other required files) in the directory `jscolor/`.
+
+I'm absolutely *amazing* at PHP.
