@@ -1,6 +1,11 @@
 noJSON
 ============
 simple nodejs server that extracts the value of a key from a piece of JSON.
+It *should* never crash.
+
+Usage:
+
+`GET /?url=<url here>&key=<JSON key>`
 
 ie, `GET /?url=http://ipinfo.io&key=city`.
 
