@@ -6,6 +6,6 @@ If asked something ending with "ok?" it will reply with "ok."
 
 If the message contains "help" and "crystal ball", it will reply with a help message.
 
-It also greets people wjoining a channel with a message.
+It also greets people joining a channel with a message.
 
 Yay perl.
