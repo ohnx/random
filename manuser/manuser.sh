@@ -30,8 +30,6 @@ supprimer () {
     fi
 }
 
-#must... get.. SHORTER!
-: 'demande () {'
     read -rp "Add or remove user: " command
     if [ "$command" = "add" ]
       then
@@ -41,25 +39,7 @@ supprimer () {
       then
       supprimer
    fi
-    echo "invalid option"
-: '    demande #recursion! :D
-}
-
-case $1 in
-    -a|add)
-    ajouter
-    exit
-    ;;
-    -r|remove)
-    supprimer
-    exit
-    ;;
-    *)
-    #Il n'y avait pas une option donnee, alors on doit demander l'utilisateur.
-    demande
-    exit
-    ;;
-esac'
+   
 else
     echo "Only root may add a user to the system"
     exit 2
