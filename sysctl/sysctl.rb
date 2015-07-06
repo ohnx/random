@@ -2,7 +2,7 @@ require 'socket'
 require 'cinch'
 
 CHANNEL = "##ohnx"
-PORT = 2000
+SRVPORT = 2000
 OWNERS = ['ohnx','ohnyx','ohnx|VPS','ohnx_']
 SERVER = "irc.freenode.org"
 PORT = 6667
@@ -104,7 +104,7 @@ bot = Cinch::Bot.new do
 end
 
 def server(bot)
-  server = TCPServer.new '127.0.0.1', PORT
+  server = TCPServer.new '127.0.0.1', SRVPORT
   loop do
     Thread.start(server.accept) do |client|
       message = client.gets
