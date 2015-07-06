@@ -53,11 +53,6 @@ case $1 in
     supprimer
     exit
     ;;
-    -h|help)
-    echo "run the command then pick whether or not you want to remove or add a user."
-    echo "alternatively, just use command flags -a or -r to add/remove respectively"
-    exit
-    ;;
     *)
     #Il n'y avait pas une option donnee, alors on doit demander l'utilisateur.
     demande
