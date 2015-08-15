@@ -1,15 +1,15 @@
 noJSON
 ============
-**Notice: I am currently working on a newer version of this app in Python.**
 
 simple nodejs server that extracts the value of a key from a piece of JSON.
 It *should* never crash.
 
-Also, it has 2 dependencies that are pretty common. They are:
+Also, it has 3 dependencies that are pretty common. They are:
  - http
  - url
+ - cluster
 
-If you don't have them, I don't know how you plan on running nodejs servers.
+If you don't have the first two, I don't know how you plan on running nodejs servers.
 
 Usage:
 
