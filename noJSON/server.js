@@ -50,7 +50,7 @@ function handleRequest(request, res){
 	//Enclosed in a try-catch because errors.
 	try {
 		var urlp = url.parse(urlg.toString());
-		var options = {host: urlp.host, path: urlp.pathname};
+		var options = {host: urlp.host, path: urlp.pathname, followAllRedirects: true, headers: {accept: '*/*'}};
 	} catch (e) {
 		res.statusCode = 400;
 		res.end('Error parsing URL\n');
